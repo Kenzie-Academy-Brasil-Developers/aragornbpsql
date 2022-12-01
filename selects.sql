@@ -29,4 +29,4 @@ and pp.produto_id = p.id
 and c.nome = 'Laura';
 
 -- 5)
-select p.nome, count(prod.id) from produtos p, produtos_pedidos prod where p.id = prod.produto_id group by p.nome;
+select p.nome, count(prod.id) from produtos p, produtos_pedidos prod where p.id = prod.produto_id group by p.nome order by p.nome;
